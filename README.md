@@ -34,8 +34,9 @@ GOOGLE_API_KEY=your_google_gemini_api_key
 python main.py        # To generate FAISS index
 ```
 ### 6. uvicorn api:app --reload --port 8000   #to run front-end
+#then go to the listed url 
+
 ```bash
-then go to the listed url 
 
 http://localhost:8000/docs
 ```
