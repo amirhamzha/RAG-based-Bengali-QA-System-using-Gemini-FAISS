@@ -34,7 +34,7 @@ GOOGLE_API_KEY=your_google_gemini_api_key
 python main.py        # To generate FAISS index
 
 ### 6. uvicorn api:app --reload --port 8000   #to run front-end
-
+```bash
 #  then go to the listed url 
 
 http://localhost:8000/docs
@@ -43,7 +43,7 @@ http://localhost:8000/docs
 
 
 ## 🛠️ Tools, Libraries, and Packages Used
-
+```bash
 - **LangChain**: Framework for chaining LLMs with retrievers and indexes.
 - **FAISS**: Fast vector similarity search.
 - **Google Gemini API**: LLM for answering in Bengali.
@@ -54,7 +54,7 @@ http://localhost:8000/docs
 ---
 
 ## 🔍 Sample Queries & Outputs
-
+```bash
 ### Input: অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?
 **Output:** শুম্ভুনাথ
 
@@ -67,7 +67,7 @@ http://localhost:8000/docs
 you find fast-api frontend and there is method listed below how to user input 
 
 ## 📖 API Documentation ()
-
+```bash
 write query in the query string and click excecute
 
 - Endpoint: `/query`
@@ -111,7 +111,7 @@ Download
 ---
 
 ## ❓ Must Answer Questions
-
+```bash
 ### 1. **What method or library did you use to extract the text, and why?**
 We used **PyMuPDF (fitz)** for its superior handling of complex Bengali fonts and layouts. Standard extractors like PyPDF2 missed important glyphs.
 
@@ -140,7 +140,7 @@ Most answers are correct. To improve further:
 
 
 ## Illustrations
-
+```bash
 ### 1.  query-1
 ![query-1](./images/1.png)
 
@@ -163,7 +163,7 @@ Most answers are correct. To improve further:
 ## if images are not seen go to image folder to see the out put of the images  and download those png
 
 ## 📌 Project Summary (for Resume)
-
+```bash
 > **Bengali RAG QA System**: Built a multilingual RAG pipeline to answer factual questions from Bengali literature using Gemini and HuggingFace embeddings. PDF to FAISS indexing, retrieval + LLM-based response. Used in education/NLP domains.
 
 ---
