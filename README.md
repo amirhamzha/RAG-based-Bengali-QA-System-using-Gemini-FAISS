@@ -120,7 +120,8 @@ if not running then
 uvicorn api:app --reload --port 8000
 ```
 
-```Open http://localhost:8000/docs
+```
+Open http://localhost:8000/docs
 
 Expand GET /evaluate, click Try it out, then Execute.
 ```
@@ -139,6 +140,9 @@ Expand GET /evaluate, click Try it out, then Execute.
   }
 }
 ``` 
+
+
+
 ### Questions and Answer
 
 ### 1️⃣ What method or library did you use to extract the text, and why?
@@ -179,12 +183,9 @@ So far, the results are strong for factual questions. To improve even more, we c
 ---
 
 
-
-
-
 ## Illustrations
 
-![query-2](.images/1.png)
+![query-2](./images/1.png)
 
 
 
