@@ -203,7 +203,7 @@ So far, the results are strong for factual questions. To improve even more, we c
 ---
 
 ### 4. evaluation  
-![evaluation](./images/evaluation.png)
+![evaluation](.\Images\evaluation.png)
 
 ```
 
