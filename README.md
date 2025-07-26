@@ -146,5 +146,25 @@ Most answers are correct. To improve further:
 
 ---
 
-## 👨‍💻 Maintainer
-**Your Name** – [LinkedIn](#) | [GitHub](#)
+
+
+
+## Illustrations
+
+### 1.  query-1
+![query-1](images/file1.png)
+
+---
+
+### 2. query-2 
+![query-2](images/file2.png)
+
+---
+
+### 3. query-3  
+![query-3](images/file3.png)
+
+---
+
+### 4. evaluation  
+![evaluation](images/file4.png)
