@@ -72,6 +72,8 @@ you find fast-api frontend and there is method listed below how to user input
 
 
 ## 📖 API Documentation ()
+
+APi references for chat and query
 Run the server:
 ```bash
 uvicorn api:app --reload --port 8000
@@ -136,30 +138,45 @@ Expand GET /evaluate, click Try it out, then Execute.
   }
 }
 
+
+
 ``` 
-## ❓ Must Answer Questions
-```bash
-### 1. **What method or library did you use to extract the text, and why?**
-We used **PyMuPDF (fitz)** for its superior handling of complex Bengali fonts and layouts. Standard extractors like PyPDF2 missed important glyphs.
+### questions and answer
 
-### 2. **What chunking strategy did you choose?**
-Character-level chunking using `RecursiveCharacterTextSplitter` with size = 5000 and overlap = 1100. This ensures semantic continuity in low-resource languages.
+### 1️⃣ What method or library did you use to extract the text, and why?
+We used **PyMuPDF (`fitz`)** because it handles complex Bengali fonts and multi-column layouts better than older libraries like PyPDF2. It keeps Unicode glyphs intact, which is essential for Bengali text where font encoding can be inconsistent.
 
-### 3. **What embedding model did you use?**
-`sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` — chosen for its lightweight footprint and strong performance across many languages including Bengali.
+---
 
-### 4. How are you comparing the query with your stored chunks? Why did you choose this similarity method and storage setup?
-I index the chunk embeddings in a FAISS vectorstore. At query time I embed the question identically, then run a cosine‑similarity nearest‑neighbor search. FAISS gives millisecond lookups, and cosine similarity is ideal for direction‑based comparisons in embedding space.
+### 2️⃣ What chunking strategy did you choose?
+We used **character-level chunking** with `RecursiveCharacterTextSplitter` — chunk size **5000** characters, overlap **1100**. This keeps context intact across chunks, which is important for literature or narrative text. The overlap helps catch partial ideas that might otherwise split awkwardly.
 
-### 5. **How do you ensure meaningful query-document comparison?**
-Semantic embeddings + overlap-based chunking preserves context. Queries are matched to top-K relevant chunks before LLM processing.If a query is too vague (e.g. “age”), the top similarities will all be low—you can detect that via a threshold and then prompt for clarification or fall back to a simple keyword search.
+---
 
+### 3️⃣ What embedding model did you use?
+We used `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`. It’s a fast, multilingual model that performs well on Bengali and other low-resource languages. It captures paraphrase-level meaning, so different phrasings map to similar vectors. It’s also lightweight enough for local or small-server deployment.
 
-### 6. **Are results relevant? What could improve them?**
-Most answers are correct. To improve further:
-- Tune chunk size/overlap.
-- Try more powerful emedding paid one.
-- Use Gemini paid or open ai paid  for better reasoning.
+---
+
+### 4️⃣ How are you comparing the query with your stored chunks? Why did you choose this similarity method and storage setup?
+Each chunk is embedded the same way as the user query, then stored in a **FAISS** vector index. At query time, we embed the input and run a cosine similarity search.  
+Cosine similarity works well for high-dimensional semantic vectors because it measures their direction, which matches how these embeddings encode meaning. FAISS provides super fast nearest-neighbor search even for large document sets.
+
+---
+
+### 5️⃣ How do you ensure meaningful query–document comparison?
+We combine semantic embeddings with overlap-based chunking to keep context relevant. We always retrieve the top‑K most similar chunks to pass to Gemini.  
+If a query is too vague (e.g. “Who?” or “When?”) the similarity scores will drop — we can detect that and ask the user to clarify or fallback to a simpler keyword search.
+
+---
+
+### 6️⃣ Are results relevant? What could improve them?
+So far, the results are strong for factual questions. To improve even more, we could:  
+- Tune chunk size and overlap to fit different source types.  
+- Use a more powerful paid embedding model.  
+- Switch to a stronger LLM (Gemini paid or OpenAI GPT-4) for deeper reasoning.  
+- Add a reranker step to refine top-K results for edge cases or ambiguous queries.
+
 
 
 
