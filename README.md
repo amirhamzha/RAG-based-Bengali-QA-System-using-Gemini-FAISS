@@ -139,16 +139,6 @@ Most answers are correct. To improve further:
 
 
 
-
-## 📌 Project Summary (for Resume)
-
-> **Bengali RAG QA System**: Built a multilingual RAG pipeline to answer factual questions from Bengali literature using Gemini and HuggingFace embeddings. PDF to FAISS indexing, retrieval + LLM-based response. Used in education/NLP domains.
-
----
-
-
-
-
 ## Illustrations
 
 ### 1.  query-1
@@ -168,3 +158,13 @@ Most answers are correct. To improve further:
 
 ### 4. evaluation  
 ![evaluation](images/evaluation.png)
+
+
+## 📌 Project Summary (for Resume)
+
+> **Bengali RAG QA System**: Built a multilingual RAG pipeline to answer factual questions from Bengali literature using Gemini and HuggingFace embeddings. PDF to FAISS indexing, retrieval + LLM-based response. Used in education/NLP domains.
+
+---
+
+
+
