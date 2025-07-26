@@ -81,16 +81,16 @@ Open http://localhost:8000/docs
 
 Expand POST /chat, click Try it out, enter your query, click Execute.
 
-in the place of your query write you query and press execute 
-
 ```bash
-in the place of your query write you query and press execute you can play with top_k tune parameters but no touch index_path
+#in the place of your query write you query and press execute you can play with top_k tune parameters but do not touch index_path
 {
   "query": "বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?",
   "top_k": 6,
   "index_path": "vectorstores/HSC26-Bangla1st-paper"
 }
+
 ```
+then press excute you will your query and answer and retrieved chunks
 ##  responese 
 
   "answer": "পনেরো বছর",
