@@ -185,12 +185,10 @@ So far, the results are strong for factual questions. To improve even more, we c
 
 
 ## Illustrations
-```
-### 1.  query-1
+
 ![Description](https://github.com/amirhamzha/RAG-based-Bengali-QA-System-using-Gemini-FAISS/raw/main/images/1.png)
 
 
----
 
 ### 2. query-2 
 ![Description](https://github.com/amirhamzha/RAG-based-Bengali-QA-System-using-Gemini-FAISS/raw/main/images/1.png)
