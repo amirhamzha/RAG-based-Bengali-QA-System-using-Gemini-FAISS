@@ -50,8 +50,7 @@ http://localhost:8000/docs
 - **HuggingFace Embedding Models**: Multilingual sentence embeddings.
 - **PyMuPDF (fitz)**: Accurate Bengali PDF extraction.
 - **dotenv**: Load API keys securely.
-
----
+```
 
 ## 🔍 Sample Queries & Outputs
 ```bash
