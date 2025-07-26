@@ -72,25 +72,24 @@ you find fast-api frontend and there is method listed below how to user input
 
 
 ## 📖 API Documentation ()
-```bash
 Run the server:
-
+```bash
 uvicorn api:app --reload --port 8000
 ```
-```bash
-write query in the query string and click excecute
 
-- Endpoint: `/query`
-- Method: `POST`
-- Body:
-```json
+Open http://localhost:8000/docs
+
+Expand POST /chat, click Try it out, enter your query, click Execute.
+
+in the place of your query write you query and press execute 
+
+```bash
+in the place of your query write you query and press execute you can play with top_k tune parameters but no touch index_path
 {
-  "query": "বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?",    ##  only put query you want search top k and index are alrady given 
+  "query": "বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?",
   "top_k": 6,
   "index_path": "vectorstores/HSC26-Bangla1st-paper"
 }
-
----
 ```
 ##  responese 
 
