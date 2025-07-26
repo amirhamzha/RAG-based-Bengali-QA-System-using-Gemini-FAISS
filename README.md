@@ -204,6 +204,7 @@ So far, the results are strong for factual questions. To improve even more, we c
 ### 4. evaluation  
 ![evaluation](./images/evaluation.png)
 
+```
 
 ## if images are not seen go to image folder to see the out put of the images  and download those png
 
@@ -211,8 +212,7 @@ So far, the results are strong for factual questions. To improve even more, we c
 ```bash
 > **Bengali RAG QA System**: Built a multilingual RAG pipeline to answer factual questions from Bengali literature using Gemini and HuggingFace embeddings. PDF to FAISS indexing, retrieval + LLM-based response. Used in education/NLP domains.
 
----
-
+```
 
 
 
