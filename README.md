@@ -152,19 +152,19 @@ Most answers are correct. To improve further:
 ## Illustrations
 
 ### 1.  query-1
-![query-1](images/file1.png)
+![query-1](images/1.png)
 
 ---
 
 ### 2. query-2 
-![query-2](images/file2.png)
+![query-2](images/2.png)
 
 ---
 
 ### 3. query-3  
-![query-3](images/file3.png)
+![query-3](images/3.png)
 
 ---
 
 ### 4. evaluation  
-![evaluation](images/file4.png)
+![evaluation](images/evaluation.png)
