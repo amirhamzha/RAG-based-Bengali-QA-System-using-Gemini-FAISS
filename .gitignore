@@ -1,0 +1,15 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+venv/
+env/
+rag-env/
+.ipynb_checkpoints/
+.vscode/
+
+.DS_Store
+Thumbs.db
+vectorstores/

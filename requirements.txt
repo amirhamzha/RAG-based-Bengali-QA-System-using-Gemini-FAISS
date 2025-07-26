@@ -1,0 +1,14 @@
+pypdf>=3.0.0
+langchain
+tiktoken
+sentence-transformers
+python-dotenv
+langchain-community==0.0.30
+faiss-cpu
+langchain-google-genai
+pymupdf  # ADDED REASON PYPDF COULDN NOT EXTRACT ALL THE TEXT PROPERLY
+fastapi
+uvicorn
+pydantic
+scikit-learn
+numpy
