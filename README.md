@@ -203,9 +203,10 @@ So far, the results are strong for factual questions. To improve even more, we c
 ### 4. evaluation  
 ![evaluation](./images/evaluation.png)
 
----
+
 
 ###📌 Project Summary 
+
 This project implements a Retrieval-Augmented Generation (RAG) based Question Answering (QA) system designed primarily for the Bengali language, while also allowing users to ask questions in English. It combines the power of Gemini language models with FAISS (Facebook AI Similarity Search) to enable efficient semantic search and retrieval over large Bengali text corpora.
 
 Key features include:
@@ -224,3 +225,4 @@ Use cases: Useful for educational tools, customer support bots, and information 
 
 The system bridges the gap in Bengali NLP by integrating advanced retrieval and generation techniques to deliver precise QA performance in a multilingual, low-resource language settin
 
+---
