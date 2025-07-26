@@ -66,7 +66,7 @@ http://localhost:8000/docs
 
 you find fast-api frontend and there is method listed below how to user input 
 
-```bash
+```
 
 
 
