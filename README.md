@@ -138,11 +138,8 @@ Expand GET /evaluate, click Try it out, then Execute.
     "কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?": 0.51
   }
 }
-
-
-
 ``` 
-### questions and answer
+### Questions and Answer
 
 ### 1️⃣ What method or library did you use to extract the text, and why?
 We used **PyMuPDF (`fitz`)** because it handles complex Bengali fonts and multi-column layouts better than older libraries like PyPDF2. It keeps Unicode glyphs intact, which is essential for Bengali text where font encoding can be inconsistent.
@@ -179,6 +176,7 @@ So far, the results are strong for factual questions. To improve even more, we c
 - Add a reranker step to refine top-K results for edge cases or ambiguous queries.
 
 
+---
 
 
 
@@ -186,12 +184,12 @@ So far, the results are strong for factual questions. To improve even more, we c
 
 ## Illustrations
 
-![Description](https://github.com/amirhamzha/RAG-based-Bengali-QA-System-using-Gemini-FAISS/raw/main/images/1.png)
+![query-2](.images/1.png)
 
 
 
 ### 2. query-2 
-![Description](https://github.com/amirhamzha/RAG-based-Bengali-QA-System-using-Gemini-FAISS/raw/main/images/1.png)
+![query-2](./images/2.png)
 
 
 ---
@@ -202,17 +200,30 @@ So far, the results are strong for factual questions. To improve even more, we c
 ---
 
 ### 4. evaluation  
-![evaluation](.images\evaluation.png)
-
-```
+![evaluation](./images/evaluation.png)
 
 ## if images are not seen go to image folder to see the out put of the images  and download those png
-
-## 📌 Project Summary (for Resume)
-```bash
-> **Bengali RAG QA System**: Built a multilingual RAG pipeline to answer factual questions from Bengali literature using Gemini and HuggingFace embeddings. PDF to FAISS indexing, retrieval + LLM-based response. Used in education/NLP domains.
-
-```
+---
 
 
+##📌 Project Summary (for Resume)
+
+Project Summary
+This project implements a Retrieval-Augmented Generation (RAG) based Question Answering (QA) system designed primarily for the Bengali language, while also allowing users to ask questions in English. It combines the power of Gemini language models with FAISS (Facebook AI Similarity Search) to enable efficient semantic search and retrieval over large Bengali text corpora.
+
+Key features include:
+
+Document Embedding & Indexing: Bengali documents are embedded into vector representations using Gemini models and indexed using FAISS for fast similarity search.
+
+Multilingual Question Support: Users can ask questions in both Bengali and English, making the system flexible and accessible to a wider audience.
+
+Retrieval Augmentation: When a question is asked, the system retrieves relevant document chunks from the FAISS index to provide context.
+
+Answer Generation: Using the retrieved context, the Gemini language model generates accurate and context-aware answers in Bengali.
+
+Multilingual and low-resource language support: Tailored to address challenges of Bengali NLP with state-of-the-art transformer models.
+
+Use cases: Useful for educational tools, customer support bots, and information retrieval for Bengali-speaking users and bilingual audiences.
+
+The system bridges the gap in Bengali NLP by integrating advanced retrieval and generation techniques to deliver precise QA performance in a multilingual, low-resource language settin
 
