@@ -66,7 +66,17 @@ http://localhost:8000/docs
 
 you find fast-api frontend and there is method listed below how to user input 
 
+```
+
+
+
+
 ## 📖 API Documentation ()
+```bash
+Run the server:
+
+uvicorn api:app --reload --port 8000
+```
 ```bash
 write query in the query string and click excecute
 
@@ -81,6 +91,7 @@ write query in the query string and click excecute
 }
 
 ---
+```
 ##  responese 
 
   "answer": "পনেরো বছর",
@@ -167,6 +178,7 @@ Most answers are correct. To improve further:
 > **Bengali RAG QA System**: Built a multilingual RAG pipeline to answer factual questions from Bengali literature using Gemini and HuggingFace embeddings. PDF to FAISS indexing, retrieval + LLM-based response. Used in education/NLP domains.
 
 ---
+
 
 
 
