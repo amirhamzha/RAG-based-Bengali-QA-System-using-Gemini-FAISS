@@ -55,19 +55,26 @@ http://localhost:8000/docs
 ```
 
 ## 🔍 Sample Queries & Outputs
-```bash
-### Input: অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?
-**Output:** শুম্ভুনাথ
+## Illustrations
 
-### Input: বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?
-**Output:** ১৫ বছর
+![query-2](./images/1.png)
 
-#after going to the specific url listed url 
- http://localhost:8000/docs
 
-you find fast-api frontend and there is method listed below how to user input 
 
-```
+### 2. query-2 
+![query-2](./images/2.png)
+
+
+---
+
+### 3. query-3  
+![query-3](./images/3.png)
+
+---
+
+### 4. evaluation  
+![evaluation](./images/evaluation.png)
+
 
 
 
@@ -180,28 +187,6 @@ So far, the results are strong for factual questions. To improve even more, we c
 - Add a reranker step to refine top-K results for edge cases or ambiguous queries.
 
 
----
-
-
-## Illustrations
-
-![query-2](./images/1.png)
-
-
-
-### 2. query-2 
-![query-2](./images/2.png)
-
-
----
-
-### 3. query-3  
-![query-3](./images/3.png)
-
----
-
-### 4. evaluation  
-![evaluation](./images/evaluation.png)
 
 ---
 
