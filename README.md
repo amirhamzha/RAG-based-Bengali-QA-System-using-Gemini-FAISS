@@ -1,7 +1,8 @@
 
-# 📚 Bengali RAG-based Question Answering System
+# 📚 Multilingual Retrieval-Augmented Generation (RAG) System
 
-A Retrieval-Augmented Generation (RAG) pipeline for answering questions in **Bengali** using PDF documents. This project demonstrates how to process Bengali text, chunk, embed, index, and retrieve document segments for accurate semantic question answering.
+
+A Retrieval-Augmented Generation (RAG) pipeline for answering questions in **Bengali**  using PDF documents  but accept queries in Both languages **English** and  **Bangla**. This project demonstrates how to process Bengali text, chunk, embed, index, and retrieve document segments for accurate semantic question answering.
 
 ---
 
