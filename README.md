@@ -187,12 +187,12 @@ So far, the results are strong for factual questions. To improve even more, we c
 ## Illustrations
 ```bash
 ### 1.  query-1
-![query-1](./images/1.png)
+![query-1](https://github.com/amirhamzha/RAG-based-Bengali-QA-System-using-Gemini-FAISS/blob/main/images/1.png)
 
 ---
 
 ### 2. query-2 
-![query-2](./images/2.png)
+![query-2](images/2.png)
 
 ---
 
