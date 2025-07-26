@@ -81,7 +81,7 @@ Open http://localhost:8000/docs
 
 Expand POST /chat, click Try it out, enter your query, click Execute.
 
-```bash
+```
 #in the place of your query write you query and press execute you can play with top_k tune parameters but do not touch index_path
 {
   "query": "বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?",
@@ -91,11 +91,22 @@ Expand POST /chat, click Try it out, enter your query, click Execute.
 
 ```
 then press excute you will your query and answer and retrieved chunks
-##  responese 
 
-  "answer": "পনেরো বছর",
+
+##  responese 
+```
+{
   "query": "বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?",
-  "retrieved_chunks": []
+  "answer": "১৫ বছর",
+  "retrieved_chunks": [
+    "… relevant chunk text 1 …",
+    "… relevant chunk text 2 …",
+    "…"
+  ]
+}
+
+```
+
 
 
 
